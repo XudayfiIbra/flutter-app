@@ -63,14 +63,30 @@ class AppPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(left: 20, right: 20, top: 10),
               child: Container(
-                child: const TextField(
+                child: TextField(
                   decoration: InputDecoration(
-                    border: OutlineInputBorder(),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(50),
+                      borderSide: const BorderSide(
+                        color: Colors.deepPurple,
+                      ),
+                    ),
                     hintText: "Search",
-                    hintStyle: TextStyle(
+                    hintStyle: const TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.w300,
                       color: Colors.deepPurple,
+                    ),
+                    prefixIcon: const Icon(
+                      Icons.search,
+                      color: Colors.deepPurple,
+                      size: 30,
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(50),
+                      borderSide: const BorderSide(
+                        color: Colors.pink,
+                      ),
                     ),
                   ),
                 ),
