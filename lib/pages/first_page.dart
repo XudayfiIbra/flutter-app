@@ -18,7 +18,7 @@ class _FirstPageState extends State<FirstPage> {
     });
   }
 
-  final List _pages = [HomePage(), AppPage(), SettingPage()];
+  final List _pages = const [HomePage(), AppPage(), SettingPage()];
 
   @override
   Widget build(BuildContext context) {
