@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: Colors.white,
         appBar: AppBar(
           title: const Text(
             'Home',
@@ -73,12 +74,39 @@ class MyApp extends StatelessWidget {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   border: Border.all(
-                    color: const Color.fromARGB(255, 38, 1, 102),
+                    color: const Color.fromRGBO(59, 17, 133, 0.582),
                     width: 2,
                   )),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    padding: const EdgeInsets.only(top: 40, left: 20),
+                    child: const Text(
+                      'Welcome!',
+                      style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.deepPurple,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.only(left: 20, top: 5),
+                    child: const Text(
+                      'Let schedule your\nprojects',
+                      style: TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.w400,
+                        color: Color.fromRGBO(59, 17, 133, 0.582),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
             const SizedBox(
-              height: 40,
+              height: 40 / 2,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -109,6 +137,60 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                 )
+              ],
+            ),
+            Row(
+              children: [
+                Expanded(
+                  child: Container(
+                    margin: const EdgeInsets.only(left: 20, top: 20),
+                    height: 150,
+                    decoration: BoxDecoration(
+                      color: Colors.deepPurple,
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  width: 20,
+                ),
+                Expanded(
+                  child: Container(
+                    margin: const EdgeInsets.only(right: 20, top: 20),
+                    height: 150,
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 240, 252, 253),
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            Row(
+              children: [
+                Expanded(
+                  child: Container(
+                    margin: const EdgeInsets.only(left: 20, top: 20),
+                    height: 150,
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 240, 252, 253),
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  width: 20,
+                ),
+                Expanded(
+                  child: Container(
+                    margin: const EdgeInsets.only(right: 20, top: 20),
+                    height: 150,
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 240, 252, 253),
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                  ),
+                ),
               ],
             ),
           ],
