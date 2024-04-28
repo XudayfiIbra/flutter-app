@@ -5,12 +5,15 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        width: 200,
-        height: 300,
-        color: Colors.pink,
+    return const Scaffold(
+        body: Center(
+      child: Text(
+        'Welcome to Hudayfi app',
+        style: TextStyle(
+            fontSize: 30,
+            color: Color.fromARGB(221, 60, 56, 56),
+            fontWeight: FontWeight.bold),
       ),
-    );
+    ));
   }
 }

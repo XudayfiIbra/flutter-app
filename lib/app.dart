@@ -26,17 +26,17 @@ class AppPage extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(right: 20),
               child: Icon(
-                Icons.notifications_active_sharp,
+                Icons.airplane_ticket,
                 color: Colors.deepPurple,
               ),
-            )
+            ),
           ],
           elevation: 0,
           backgroundColor: Colors.white,
           toolbarHeight: 70,
         ),
-        body: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+        body: ListView(
+          // crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 20),
